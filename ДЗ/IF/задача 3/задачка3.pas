@@ -1,9 +1,9 @@
 var
   a,b: integer;
 begin
-  writeln('Введите числа',a,b);
+  writeln('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Р° a,b');
   readln(a,b);
-  if a>b then writeln('a больше');
-  if a<b then writeln('b больше');
-  if a=b then writeln('числа равны');
+  if a>b then writeln('a Р±РѕР»СЊС€Рµ');
+  if a<b then writeln('b Р±РѕР»СЊС€Рµ');
+  if a=b then writeln('С‡РёСЃР»Р° СЂР°РІРЅС‹');
 end.
