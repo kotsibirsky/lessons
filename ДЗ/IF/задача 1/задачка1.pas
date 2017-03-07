@@ -4,9 +4,9 @@ begin
   writeln('Введите числа a,b ');
   readln(a,b);
   if a>b then
-    writeln('a ·ÓÎ¸¯Â');
+    writeln('a больше');
   if a<b then
-    writeln('b ·ÓÎ¸¯Â')
+    writeln('b больше)
   else
-    writeln('˜ËÒÎ‡ ‡‚Ì˚');
+    writeln('числа равны');
 end.
