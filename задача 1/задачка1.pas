@@ -1,12 +1,12 @@
 var
   a,b: integer;
 begin
-  writeln('Введите числа',a,b);
+  writeln('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Р° a,b ');
   readln(a,b);
   if a>b then
-    writeln('a больше');
+    writeln('a В·Г“ГЋВёВЇГ‚');
   if a<b then
-    writeln('b больше')
+    writeln('b В·Г“ГЋВёВЇГ‚')
   else
-    writeln('числа равны');
+    writeln('ЛњГ‹Г’ГЋвЂЎ пЈївЂЎвЂљГЊЛљ');
 end.
