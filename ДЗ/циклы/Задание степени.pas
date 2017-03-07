@@ -1,8 +1,8 @@
-var i,j,n,k,p: longint;
+﻿var i,j,n,k,p: longint;
     s: real;
 begin
   s:=0;
-  writeln('Введите числа n,k',);
+  writeln('Введите числа n,k');
   readln(n,k);
   for i:=1 to n do
   begin
