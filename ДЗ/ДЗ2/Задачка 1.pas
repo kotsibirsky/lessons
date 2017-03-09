@@ -7,8 +7,7 @@ begin
   p:=1;
   for i:=1 to N do
   begin
-  for j:=1 to N do
-    p:=p*(-1);
+  p:=p*(-1);
   s:=s+p*i;
   end;
   writeln('Сумма чисел = ',s);
