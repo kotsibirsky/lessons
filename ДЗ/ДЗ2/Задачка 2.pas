@@ -9,7 +9,8 @@ begin
   begin
     if i mod 2 = 0 then
       p:=1
-    else p:=-1;
+    else 
+      p:=-1;
     s:=s+p*i;
   end;
   writeln('Сумма чисел = ', s);

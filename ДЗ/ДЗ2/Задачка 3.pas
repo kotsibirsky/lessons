@@ -4,7 +4,7 @@ begin
   writeln('¬ведите число');
   readln(N);
   s:=0;
-  p:=1;
+  p:=-1;
   for i:=1 to N do
   begin
     s:=s+p*i;
