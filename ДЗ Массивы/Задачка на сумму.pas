@@ -16,4 +16,9 @@ begin
   writeln('Сумма элементов массива = ',s);
   ca:=s div N;
   writeln('Среднее арифметическое чисел = ',ca);
+  if a[i]>ca then
+    begin
+    k:=k+a[i];
+    end;
+  writeln('Сумма чисел, большая чем среднее арифметическое = ',k);
 end.
