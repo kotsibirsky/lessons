@@ -5,8 +5,9 @@ type
 var
   a:TArray;
   n: word;
+  
   sum,x: integer;
-  med,i,j,k: word;
+  i,j,k: word;
 begin
   n:=MaxArraySize;
   randomize(20);
@@ -33,11 +34,16 @@ begin
   for i:=1 to n do
     write(a[i]:4);
   writeln;
+  for i:=1 to N div 2 do
+  begin
+    write(a[i]:4);
+    write(a[N-i+1]:4);
+  end;
   sum:=0;
   for i:=1 to N div 2 do
   begin
-    if a[i]<a[N div 2] then
-      sum:=sum+a[i];
-  end;  
-  writeln('Сумма чисел, меньших медианы = ', sum)
-end.
+    sum:=sum+a[n-i+1]; 
+  end;
+  writeln;
+  write('Сэкономленная сумма = ', sum);
+end.  
