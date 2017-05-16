@@ -5,7 +5,7 @@ type
 var
   a:Tarray;
   n:byte;
-  i:integer;
+  z,ind1,ind2,i:integer;
 function fnSum(a:Tarray; n:byte):integer;
 var
   i:byte;
@@ -83,6 +83,7 @@ begin
   fnCmena2:=ind1;
 end;
 begin
+  writeln('Массив');
   n:=MaxArraySize;
   randomize(10);
   for i:=1 to n do
@@ -90,10 +91,13 @@ begin
   for i:=1 to n do
     write(a[i]:4);
   writeln;
-  writeln(fnSum(a,n));
-  writeln(fnAvg(a,n));
-  writeln(fnIndMin(a,n));
-  writeln(fnIndMax(a,n));
-  writeln(fnCmena1(a,n));  
-  writeln(fnCmena2(a,n)); 
+  writeln('Индекс маленького числа ', fnIndMin(a,n));
+  writeln('Индекс большого числа ', fnIndMax(a,n));
+  ind1:=fnIndMin(a,n);
+  ind2:=fnIndMax(a,n);
+  z:=a[ind1];
+  a[ind1]:=a[ind2];
+  a[ind2]:=z;
+  for i:=1 to n do
+    write(a[i]:4);
 end.  
