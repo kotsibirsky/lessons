@@ -33,7 +33,7 @@ begin
     writeln('Лежит в I')
   else
     writeln('Не лежит в I');
-  if (f1(x,y)=-1) and (f2(x,y)=1) and (x<0) or (f1(x,y)=-1) and (f2(x,y)=0) then
+  if (f1(x,y)=-1) and (f2(x,y)=1) and (x<0) or (f1(x,y)=-1) and (f2(x,y)=-1) then
     writeln('Лежит в II')
   else
     writeln('Не лежит в II');
